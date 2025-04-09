@@ -1,0 +1,6 @@
+.history/*
+*.pyc
+dataset.h5ad
+.lh/.lhignore
+.lh/*
+external_api/keys.json

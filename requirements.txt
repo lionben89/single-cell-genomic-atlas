@@ -1,0 +1,16 @@
+anndata
+scanpy
+numpy
+pandas
+torch
+ipykernel
+scikit-learn
+matplotlib
+mygene
+transformers
+huggingface_hub
+tabulate
+igraph
+leidenalg
+openai
+harmonypy
