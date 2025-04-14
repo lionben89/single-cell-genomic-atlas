@@ -14,3 +14,5 @@ igraph
 leidenalg
 openai
 harmonypy
+tqdm
+xgboost

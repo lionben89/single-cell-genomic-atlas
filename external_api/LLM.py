@@ -5,7 +5,9 @@ from huggingface_hub import login as huggingface_login
 
 from openai import OpenAI
 
-keys = json.load("./keys.json")
+with open('./external_api/keys.json',"rb") as json_data:
+    keys = json.load(json_data)
+    json_data.close()
 
 class LLM(ABC):
     def __init__(self,**kwargs):

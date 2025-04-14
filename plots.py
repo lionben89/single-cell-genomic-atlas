@@ -32,8 +32,8 @@ def create_hist(data, xlabel, ylabel, title, bins=50):
 
     # Annotate counts beyond ±3 STD
     ymax = plt.ylim()[1]
-    plt.text(std_neg_2, ymax * 0.9, f'< -2 STD: {num_below_2std}', color='purple', ha='right')
-    plt.text(std_pos_2, ymax * 0.9, f'> +2 STD: {num_above_2std}', color='purple', ha='left')
+    plt.text(std_neg_2, ymax * 0.9, f'num counts < -2 STD: {num_below_2std}', color='purple', ha='right')
+    plt.text(std_pos_2, ymax * 0.9, f'num counts > +2 STD: {num_above_2std}', color='purple', ha='left')
 
     # Labels
     plt.xlabel(xlabel)
@@ -61,7 +61,7 @@ def plot_categorical_distribution(adata, column, top_n=None, figsize=(8, 4)):
     plt.grid(axis='x')
     plt.show()   
     
-def plot_heatmap(data, xlabel, ylabel, title, figsize=(12, 12)):
+def plot_heatmap(data, xlabel, ylabel, title, figsize=(16, 16)):
     plt.figure(figsize=figsize)
     sns.heatmap(data, cmap='viridis', annot=False)
     plt.title(title)
